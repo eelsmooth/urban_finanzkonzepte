@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/urban_finanzkonzepte/static/css/main.f20436a5.css",
+    "main.js": "/urban_finanzkonzepte/static/js/main.d05d34d0.js",
+    "static/js/787.8bfbe838.chunk.js": "/urban_finanzkonzepte/static/js/787.8bfbe838.chunk.js",
+    "static/media/vid1.mp4": "/urban_finanzkonzepte/static/media/vid1.bc1c4befb1565a897847.mp4",
+    "static/media/pic2.png": "/urban_finanzkonzepte/static/media/pic2.e5d130a6bfcbdf383a8a.png",
+    "static/media/pic1.png": "/urban_finanzkonzepte/static/media/pic1.a846153b99a513eff1ec.png",
+    "static/media/pic3.png": "/urban_finanzkonzepte/static/media/pic3.6e9dfe03df369f67f2b1.png",
+    "service-worker.js": "/urban_finanzkonzepte/service-worker.js",
+    "static/media/title1.png": "/urban_finanzkonzepte/static/media/title1.38d9d306108781e5f0c7.png",
+    "index.html": "/urban_finanzkonzepte/index.html",
+    "main.f20436a5.css.map": "/urban_finanzkonzepte/static/css/main.f20436a5.css.map",
+    "main.d05d34d0.js.map": "/urban_finanzkonzepte/static/js/main.d05d34d0.js.map",
+    "787.8bfbe838.chunk.js.map": "/urban_finanzkonzepte/static/js/787.8bfbe838.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f20436a5.css",
+    "static/js/main.d05d34d0.js"
+  ]
+}
