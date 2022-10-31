@@ -1,7 +1,7 @@
 {
   "name": "project_alex",
   "version": "0.1.0",
-  "homepage": "https://www.urbanfinanzkonzepte.de",
+  "homepage": "https://eelsmooth.github.io/urban_finanzkonzepte/",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.1.3",
