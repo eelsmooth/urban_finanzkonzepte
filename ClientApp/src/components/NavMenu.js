@@ -42,9 +42,7 @@ export class NavMenu extends Component {
         );
     }
 }
-// logo
-// Graphen
+
 // nutzerverhalten
 // alexander.urban@ovb.de
 // finanzkonzepteurban.de
-// https://images.clickfunnels.com/b5/9214e05d1840de8818f7ff40920da8/Bekannt-aus-4-.svg

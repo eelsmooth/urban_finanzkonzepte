@@ -4,13 +4,66 @@
   word-break: break-all;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+.formularBody {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.margin2 {
+    margin-top: -6.5%;
+}
+
+.margin{
+    margin-top:3%;
+}
+
+.blkfooter {
+    background-color: black;
+    width: 143.5% !important;
+    height: 120px;
+    margin-left: -22%;
+}
+
+.blkfooter2 {
+    background-color: black;
+    width: 143.5% !important;
+    height: 520px;
+    margin-left: -22%;
+}
+
+.bigFont {
+    text-align: left;
+    font-size: 24px;
+    padding:2%;
+}
+
+.lowFont {
+    font-size: 16px;
+}
+
+.bewertungen {
+    padding:5%;
+    width: 80% !important;
+    height: 100% !important;
+    /* Center horizontally*/
+    margin: 0 auto !important;
+}
+
+.bewertung{
+    border:solid;
+    border-width: 2px;
+}
+
+.bkElement {
+    padding: 1.2% !important;
+    width: 25% !important;
+    height: 50px !important;
+    /* Center horizontally*/
+    margin: 0 auto !important;
 }
 
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 @media (min-width: 768px) {
   html {
@@ -75,6 +128,11 @@ html {
     align-items: center;
 }
 
+.centerTexter {
+    text-align: center;
+    color: white;
+}
+
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -89,10 +147,28 @@ html {
     margin-left: 10px;
 }
 
+.itemNew {
+    margin-left: 10px;
+}
+
+.itemTextBlack {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 10px;
+    color: black;
+}
+
 .itemText {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 10px;
+    color: white;
+}
+
+.itemTextOld {
     font-size: 18px;
     text-align: left;
-    margin-left:10px;
+    margin-left: 10px;
 }
 
 .img1 {

@@ -40,21 +40,42 @@ export class Formular extends Component {
                 <p><b>1.</b> Wie du 6- bis 7-stelliges Vermögen aufbaust.</p>
                 <p><b>2.</b> Wie du konkret die Strategie der oberen 1% anwenden kannst.</p>
                 <p><b>3.</b> Wie du früher in Rente gehen kannst.</p>
-                <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                <form id="contact-form" action="http://formspree.io/f/xzbwjrrz" method="POST">
                     <div className="form-group">
-                        <label htmlFor="name">Name</label>
-                        <input type="text" className="form-control" />
+                        <label htmlFor="name">Vorname</label>
+                        <input type="text" name="Vorname: " className="form-control"></input>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">Email address</label>
-                        <input type="email" className="form-control" aria-describedby="emailHelp" />
+                        <label htmlFor="name">Nachname</label>
+                        <input type="text" name="Nachname: " className="form-control"></input>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="message">Message</label>
-                        <textarea className="form-control" rows="5"></textarea>
+                        <label htmlFor="name">E-Mail-Adresse</label>
+                        <input type="email" name="E-Mail-Adresse: " className="form-control"></input>
                     </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <div className="form-group">
+                        <label htmlFor="name">Geburtsdatum</label>
+                        <input type="date" name="Geburtsdatum: " className="form-control"></input>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="name">Handynummer</label>
+                        <input type="number" name="Handynummer: " className="form-control"></input>
+                    </div><br />
+                    <button type="submit" value="Send" className="btn btn-primary">Absenden</button>
                 </form>
+                <div class="blkfooter">
+                    <div class="bkElement">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.ovb.de/service-faq/impressum.html" rel="noreferrer">
+                            <u >Impressum</u>
+                        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.ovb.eu/datenschutz.html" rel="noreferrer">
+                            <u >Datenschutz</u>
+                        </a>
+                        <p></p>
+                        
+                    </div>
+                </div>
             </div>
         );
     }
