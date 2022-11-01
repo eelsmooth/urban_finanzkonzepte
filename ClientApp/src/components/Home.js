@@ -1,6 +1,7 @@
 ﻿import React, { Component } from 'react';
 import { BsCheck, BsCheckLg } from 'react-icons/bs';
 import Video from "./vid1.mp4";
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 export class Home extends Component {
     static displayName = Home.name;
@@ -48,10 +49,12 @@ export class Home extends Component {
                 </div>
                 <div class="grid-container2">
                     <div class="item1">
-                        <button type="button" class="btn btn-success btn-lg border-dark" to="/formular">
-                            <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
-                            <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
-                        </button>
+                        <Link to="/formular">
+                            <button type="button" class="btn btn-success btn-lg border-dark" to="/formular">
+                                <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
+                                <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
+                            </button>
+                        </Link>
                     </div>
                     <div class="item2">
                         <img width="auto" height="100" src="https://images.clickfunnels.com/b5/9214e05d1840de8818f7ff40920da8/Bekannt-aus-4-.svg" />
@@ -91,10 +94,12 @@ export class Home extends Component {
                     </div>
                     <div class="centerText2">
                         <div class="margin2">
-                            <button type="button" class="btn btn-success btn-lg border-dark">
-                                <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
-                                <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
-                            </button>
+                            <Link to="/formular">
+                                <button type="button" class="btn btn-success btn-lg border-dark" to="/formular">
+                                    <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
+                                    <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
+                                </button>
+                            </Link>
                         </div>
                         
                     </div>
