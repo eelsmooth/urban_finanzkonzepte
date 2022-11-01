@@ -35,7 +35,7 @@ export class Formular extends Component {
         return (
             <div>
                 <h2 class="centerText">Dein kostenloses Erstgespr&auml;ch</h2>
-                <div class="centerText2"><b>Bitte f&uuml; lle dieses Formular aus, damit Alexander Urban oder jemand aus seinem Team dein erstes kostenloses Erstgespr&auml;ch mit dir f&uuml;hren kann.</b></div>
+                <div class="centerText2"><b>Bitte f&uuml;lle dieses Formular aus, damit Alexander Urban oder jemand aus seinem Team dein erstes kostenloses Erstgespr&auml;ch mit dir f&uuml;hren kann.</b></div>
                 <p><b>Wir besprechen:</b></p>
                 <p><b>1.</b> Wie du 6- bis 7-stelliges Verm	&ouml;gen aufbaust.</p>
                 <p><b>2.</b> Wie du konkret die Strategie der oberen 1% anwenden kannst.</p>
@@ -62,7 +62,7 @@ export class Formular extends Component {
                         <input type="number" name="Handynummer: " className="form-control"></input>
                     </div><br />
                     <button type="submit" value="Send" className="btn btn-primary">Absenden</button>
-                </form><br /><br />
+                </form><br /><br /><br /><br /><br />
                 <div class="blkfooter">
                     <div class="bkElement">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -73,7 +73,6 @@ export class Formular extends Component {
                             <u >Datenschutz</u>
                         </a>
                         <p></p>
-
                     </div>
                 </div>
             </div>

@@ -93,7 +93,7 @@ export class Home extends Component {
                         <p class="itemText"><BsCheck />  ​"<b>Kryptowährungen</b> sind die Zukunft."</p>
                     </div>
                     <div class="centerText2">
-                        <div class="margin2">
+                        <div class="margin2"><br />
                             <Link to="/formular">
                                 <button type="button" class="btn btn-success btn-lg border-dark" to="/formular">
                                     <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
@@ -101,10 +101,8 @@ export class Home extends Component {
                                 </button>
                             </Link>
                         </div>
-                        
                     </div>
-                    
-                </div>
+                </div><br /><br /><br /><br />
                 <div><br /><br />
                     <h3 class="margin">Die 5 häufigsten Gründe, die dich aktuell noch davon trennen, 6- bis 7-stelliges Vermögen aufzubauen</h3><br /><br />
                     <p></p>
