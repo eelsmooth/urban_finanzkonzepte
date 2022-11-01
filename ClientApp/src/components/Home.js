@@ -8,7 +8,7 @@ export class Home extends Component {
 
     render() { 
         return (
-            <div>
+            <div> 
                 { /* First 
                 <div style={{ backgroundImage: `url(${image})`, backgroundRepeat: "no-repeat", backgroundSize: "contain", height: 1080, width: '145%' }}>
                     <div class="firstDiv">
