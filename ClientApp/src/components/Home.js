@@ -25,8 +25,8 @@ export class Home extends Component {
                 </div>*/ }
                 
                 <div class="centerText2"><b>Ab 100&euro; pro Monat zu 8-14% Gewinn pro Jahr</b></div>
-                <h2 class="centerText">Sicher investieren ohne selbst Finanzexperte sein zu m&uuml;ssen</h2>
-                <div class="centerText3"><b>Du hast keinerlei Aufwand, weil wir Alles f&uuml;r dich umsetzen. Von A bis Z.</b></div>
+                <h1 class="centerText">Sicher investieren ohne selbst Finanzexperte sein zu m&uuml;ssen</h1>
+                <div class="centerText2"><b>Du hast keinerlei Aufwand, weil wir Alles f&uuml;r dich umsetzen. Von A bis Z.</b></div>
                 <div class="grid-container">
                     <div class="item1">
                         <video controls width="auto" height="350" autoPlay muted src={Video} type="video/mp4" />
@@ -48,38 +48,61 @@ export class Home extends Component {
                     </div>
                 </div>
                 <div class="grid-container2">
-                    <div class="item1">
+                    <div class="btn1">
                         <Link to="/formular">
-                            <button type="button" class="btn btn-success btn-lg border-dark" to="/formular">
+                            <button type="button" class="btn3" to="/formular">
                                 <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
                                 <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                             </button>
                         </Link>
+                        <p className="newText">Wir melden uns innerhalb von 48 Stunden.</p>
                     </div>
-                    <div class="item2">
+                    <div class="btn2">
                         <img width="auto" height="100" src="https://images.clickfunnels.com/b5/9214e05d1840de8818f7ff40920da8/Bekannt-aus-4-.svg" />
                     </div>
                 </div>
-                <div>
-                    <h3>Die 8 häufigsten "Geldanlagen", mit denen du Unsummen verschenkst</h3><br />
-                    <p></p>
-                    <div class="grid-container">
-                        <div class="item3">
-                            <img width="auto" height="600" src={require('./big2.jpg')} />
-                        </div>
-                        <div class="item3">
-                            <p class="bigFont"><BsCheck />  Bausparverträge</p>
-                            <p class="bigFont"><BsCheck />  Sparbücher</p>
-                            <p class="bigFont"><BsCheck />  Girokonten</p>
-                            <p class="bigFont"><BsCheck />  Krypto-Währungen</p>
-                            <p class="bigFont"><BsCheck />  Riester-Verträge</p>
-                            <p class="bigFont"><BsCheck />  Betriebliche Altersvorsorge</p>
-                            <p class="bigFont"><BsCheck />  Depots/Broker (Aktien, ETFs, Fonds)</p>
-                            <p class="bigFont"><BsCheck />  Lebensversicherungen</p>
+                <div class="blkfooter2">
+                    <p></p><br /><br />
+                    <h3 class="centerTexter">Die 8 häufigsten "Geldanlagen", mit denen du Unsummen verschenkst</h3><br /><br />
+                    <div className="onlyLeft">
+                        <div class="grid-container">
+                            <p class="itemText"><BsCheck />  Bausparverträge</p>
+                            <p class="itemText"><BsCheck />  Riester-Verträge</p>
+                            <p class="itemText"><BsCheck />  Sparbücher</p>
+                            <p class="itemText"><BsCheck />  ​​Betriebliche Altersvorsorge</p>
+                            <p class="itemText"><BsCheck />  Girokonten</p>
+                            <p class="itemText"><BsCheck />  Depots/Broker (Aktien, ETFs, Fonds)</p>
+                            <p class="itemText"><BsCheck />  ​Krypto-Währungen</p>
+                            <p class="itemText"><BsCheck />  ​Lebensversicherungen</p>
                         </div>
                     </div>
+                    <div className="onlyLeft2">
+                        <Link to="/formular">
+                            <button type="button" class="btn3" to="/formular">
+                                <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
+                                <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
+                            </button>
+                        </Link>
+                        <p className="newText2">Wir melden uns innerhalb von 48 Stunden.</p>
+                    </div>
+                </div><br /><br /><br /><br />
+                <h1 class="centerText"><h3>Es ist viel mehr möglich</h3></h1><br /><br />
+                <img width="auto" height="800" src="https://images.clickfunnels.com/60/f78ec0a76e43d0a7dc29b220d5d43f/Kopie-von-Das-Problem-mit-der-Inflation-1-.svg"/>
+                <br /><br /><br /><br />
+                <h1 class="centerText"><h3>Kleine Optimierungen bringen 6- bis 7-stellige Summen</h3></h1><br /><br />
+                <img width="auto" height="800" src="https://images.clickfunnels.com/ab/50acd8c0f943229f96805782471cc4/Kopie-von-Das-Problem-mit-der-Inflation-3-.svg" />
+                <br /><br /><br /><br /><br /><br />
+                <div class="btnDiv4">
+                    <Link to="/formular">
+                        <button type="button" class="btn3" to="/formular">
+                            <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
+                            <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
+                        </button>
+                    </Link>
+                    <p className="newText2">Wir melden uns innerhalb von 48 Stunden.</p>
                 </div>
-                <div class="blkfooter2">
+                <br /><br /><br />
+                <div class="blkfooterX">
                     <p></p><br /><br />
                     <h3 class="centerTexter">Häufige Irrglauben</h3><br /><br />
                     <div class="grid-container">
@@ -92,33 +115,37 @@ export class Home extends Component {
                         <p class="itemText"><BsCheck />  "In YouTube-Videos bekomme ich das nötige Wissen."</p>
                         <p class="itemText"><BsCheck />  ​"<b>Kryptowährungen</b> sind die Zukunft."</p>
                     </div>
-                    <div class="centerText2">
-                        <div class="margin2"><br />
-                            <Link to="/formular">
-                                <button type="button" class="btn btn-success btn-lg border-dark" to="/formular">
-                                    <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
-                                    <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
-                                </button>
-                            </Link>
-                        </div>
+                    <div class="btnDiv4">
+                        <Link to="/formular">
+                            <button type="button" class="btn3" to="/formular">
+                                <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
+                                <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
+                            </button>
+                        </Link>
+                        <p className="newText2">Wir melden uns innerhalb von 48 Stunden.</p>
                     </div>
-                </div><br /><br /><br /><br />
-                <div><br /><br />
-                    <h3 class="margin">Die 5 häufigsten Gründe, die dich aktuell noch davon trennen, 6- bis 7-stelliges Vermögen aufzubauen</h3><br /><br />
+                </div><br /><br /><br />
+                <div>
+                    <h2 class="margin">Die 5 häufigsten Gründe, die dich aktuell noch davon trennen, 6- bis 7-stelliges Vermögen aufzubauen</h2><br /><br />
                     <p></p>
-                    <div class="grid-container">
+                    <div class="grid-container3">
                         <div class="item3">
                             <b>Fehlendes Wissen</b>
                             <p>Dein fehlendes Wissen kann dafür sorgen, dass du falsche Strategien für richtig hältst.
                                 Oder dass du so verunsichert bist, dass du quasi in "Schockstarre" gar nichts für deinen Vermögensaufbau machst.</p>
-                        </div>
+                        </div><br />
                         <div class="item3">
                             <b>Keine Zeit</b>
                             <p>Wenn du keine Zeit hast, dich mit dem Thema Finanzen zu beschäftigen, weil du z.B. einem Vollzeit-Job nachgehst,
                                 dann kann dein Vermögensaufbau im Normalfall nicht optimal gestaltet sein.</p>
+                        </div><br />
+                        <div class="item3">
+                            <b>Probieren auf eigene Faust</b>
+                            <p>Du probierst das Ganze erstmal alleine hinzubekommen. Schaust dir ggf. YouTube-Videos an oder liest dich in das Thema ein.
+                                Doch weißt du so viel, wie jemand der seit Jahren den ganzen Tag nichts anderes macht?</p>
                         </div>
                     </div>
-                    <div class="grid-container">
+                    <div class="grid-container4">
                         <div class="item3">
                             <b>Misstrauen gegenüber Finanzberatern</b>
                             <p>Du hast schon sehr viel schlechtes gehört von Bekannten oder Freunden, die schlechte Erfahrungen gemacht haben.
@@ -130,11 +157,21 @@ export class Home extends Component {
                                 Aber bist du dir denn dessen wirklich sicher oder ist das einfach etwas, das du von anderen aufgeschnappt hast und wiederholst?</p>
                         </div>
                     </div>
+                    <div class="btnDiv4">
+                        <Link to="/formular">
+                            <button type="button" class="btn3" to="/formular">
+                                <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
+                                <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
+                            </button>
+                        </Link>
+                        <p className="newText2">Wir melden uns innerhalb von 48 Stunden.</p>
+                    </div>
                 </div>
+                <br /><br /><br />
                 <div>
                     <h3>Kein Finanzwissen zu haben ist NORMAL...</h3>
                     <p></p>
-                    <div class="grid-container">
+                    <div class="grid-container5">
                         <div class="item3">
                             <p class="lowFont">
                                 Es ist nicht deine Schuld, nicht zu wissen, wie man die Inflation für seinen Vermögensaufbau nutzt. Wie man ohne Zeiteinsatz so investiert, wie es die oberen 1% tun, oder wie man das 8- bis 12-fache aus seinem Kapital herausholt, um langfristig 6- bis 7-stellige Beträge aufzubauen.
@@ -178,10 +215,19 @@ export class Home extends Component {
                             </ul>
                         </div>
                         <div class="item3">
-                            <img width="auto" height="800" src={require('./big3.png')} />
+                            <img width="auto" height="700" src={require('./big2.jpg')} />
                         </div>
                     </div>
-                </div>
+                    <div class="btnDiv4">
+                        <Link to="/formular">
+                            <button type="button" class="btn3" to="/formular">
+                                <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
+                                <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
+                            </button>
+                        </Link>
+                        <p className="newText2">Wir melden uns innerhalb von 48 Stunden.</p>
+                    </div>
+                </div><br /><br />
                 <h2>Das sagen unsere Kunden über uns</h2>
                 <div class="bewertungen">
                     <div>
@@ -198,16 +244,20 @@ export class Home extends Component {
                     <p></p>
                 </div>
                 <div class="blkfooter">
-                    <div class="bkElement">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://www.ovb.de/service-faq/impressum.html" rel="noreferrer">
-                            <u >Impressum</u>
-                        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://www.ovb.eu/datenschutz.html" rel="noreferrer">
-                            <u >Datenschutz</u>
-                        </a>
-                        <p></p>
+                    <div class="bkElement2">
+                        <div class="grid-container3">
+                            <Link to="https://www.ovb.de/service-faq/impressum.html" style={{ textDecoration: 'none' }}>
+                                <p style={{ paddingLeft: 13, color: 'white' }}>Impressum</p>
+                            </Link>
+                            <Link to="https://www.ovb.eu/datenschutz.html" style={{ textDecoration: 'none' }}>
+                                <p style={{ paddingLeft: 13, color: 'white' }}>Datenschutz</p>
+                            </Link>
+                            <Link to="https://www.instagram.com/agentur_urban/" style={{ textDecoration: 'none' }}>
+                                <p style={{ paddingLeft: 13, color: 'white' }}>Instagram</p>
+                            </Link>
+                        </div>
                     </div>
+                    <p className="footerText">© 2022 Urban Finanzkonzepte. All Rights Reserved.</p>
                 </div>
             </div>
         );

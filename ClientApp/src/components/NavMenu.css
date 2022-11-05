@@ -9,6 +9,10 @@
     padding-right: 10%;
 }
 
+.formDiv2{
+    margin-left: 40%;
+}
+
 .margin2 {
     margin-top: -6.5%;
 }
@@ -17,11 +21,22 @@
     margin-top:3%;
 }
 
+.footerText{
+    margin-top:2%;
+    margin-left:36%;
+}
+
 .blkfooter {
     background-color: black;
     width: 153.9%;
-    height: 140px;
+    height: 180px;
     margin-left: -27%;
+}
+
+.blkfooterX {
+    background-color: black;
+    width: 100%;
+    height: 700px;
 }
 
 .blkfooter2 {
@@ -59,6 +74,13 @@
     height: 50px !important;
     /* Center horizontally*/
     margin: 0 auto !important;
+}
+
+.bkElement2 {
+    padding: 1.2% !important;
+    width: 25% !important;
+    height: 50px !important;
+    margin-left:30%;
 }
 
 html {
@@ -127,10 +149,52 @@ html {
     align-items: center;
 }
 
+.grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 120px;
+    margin-top: -115px;
+    align-items: center;
+}
+
+.grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+    padding: 120px;
+    margin-top: -170px;
+    align-items: center;
+}
+
+.deco {
+    text-decoration: none;
+}
+
+.grid-container5 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    width: 1400px;
+    padding: 120px;
+    margin-top: -115px;
+    align-items: center;
+    margin-left:-8%;
+}
+
 .centerTexter {
     text-align: center;
     color: white;
 }
+
+.onlyLeft{
+    margin-left: 12%;
+}
+.onlyLeft2 {
+    margin-left: 33%;
+    margin-top: -5%
+}
+
 
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
@@ -138,8 +202,45 @@ html {
     font-size: 30px;
 }
 
+.newText2 {
+    margin-left: 4%;
+    font-size: 13px;
+}
+
+.newText {
+    margin-left: 8%;
+    font-size: 13px;
+}
+
 .item1 {
     grid-row: 1/6;
+    align-self: start;
+}
+.btn3 {
+    background-color: #ff9329;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btnDiv4 {
+    margin-left: 35%;
+    margin-top:-5%;
+}
+
+.btn1 {
+    grid-row: 1/6;
+    margin-top: -50%;
+    margin-left: 25%;
+}
+
+.btn2 {
+    margin-left: 25%;
 }
 
 .item2 {
