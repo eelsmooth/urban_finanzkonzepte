@@ -20,21 +20,20 @@ export class Home extends Component {
                 <div class="centerText2"><b>Ab 100&euro; pro Monat zu 8-14% Gewinn pro Jahr</b></div>
                 <h1 class="centerText">Sicher investieren ohne selbst Finanzexperte sein zu m&uuml;ssen</h1>
                 <div class="centerText2"><b>Du hast keinerlei Aufwand, weil wir Alles f&uuml;r dich umsetzen. Von A bis Z.</b></div>
-                <div class="grid-container">
-                    <div class="item1">
-                        {this.state.matches && (
+                <div className="grid-container">
+                    
+                    {this.state.matches && (
+                        <div class="item1">
                             <video controls width="auto" height="350" autoPlay muted src={Video} type="video/mp4" />
-                            )}
-                        {!this.state.matches && (
-                            <video controls width="auto" height="250" autoPlay muted src={Video} type="video/mp4" />
-                            )}
-                    </div>
+                        </div>
+                    )}
+                    {!this.state.matches && (
+                        <video controls width="auto" height="250" autoPlay muted src={Video} type="video/mp4" />
+                    )}
+                    
                     {this.state.matches && (
                         <p class="itemTextOld"><BsCheckLg /> <b>8-12x mehr Endkapital</b> als vergleichbare Geldanlagen, weil wir Strategien der oberen 1% anwenden.</p>
                      )}
-                    {this.state.matches && (
-                        <p class="itemTextOld"><BsCheckLg /> <b>8-12x mehr Endkapital</b> als vergleichbare Geldanlagen, weil wir Strategien der oberen 1% anwenden.</p>
-                    )}
                    {this.state.matches && (
                         <p class="itemTextOld"><BsCheckLg /> <b>Spare Steuern</b> - die du bei anderen Anlagen auf all deine Gewinne zahlen müsstest - weil wir deine Anlage professionell steuerlich optimieren.</p>
                     )}
@@ -45,9 +44,6 @@ export class Home extends Component {
                         <p class="itemTextOld"><BsCheckLg /> <b>​Garantierte, sichere Ergebnisse</b> aufgrund von bewiesenen Methoden (keine Meinungen).</p>
                      )}
                 </div>
-                {!this.state.matches && (
-                    <p class="itemTextOld"><BsCheckLg /> <b>8-12x mehr Endkapital</b> als vergleichbare Geldanlagen, weil wir Strategien der oberen 1% anwenden.</p>
-                )}
                 {!this.state.matches && (
                     <p class="itemTextOld"><BsCheckLg /> <b>8-12x mehr Endkapital</b> als vergleichbare Geldanlagen, weil wir Strategien der oberen 1% anwenden.</p>
                 )}
@@ -63,24 +59,22 @@ export class Home extends Component {
                 {!this.state.matches && (
                     <p class="itemTextOld"><BsCheckLg /> <b>​Flexibel bleiben</b>, weil du dich nicht an Laufzeiten bindest.Du kannst jederzeit Beiträge erhöhen oder senken, Geld auszahlen, usw.</p>
                 )}
-                <div class="grid-container2">
-                    {this.state.matches && (
-                        <div class="btn1">
-                            <Link to="/formular">
-                                <button type="button" class="btn3" to="/formular">
-                                    <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
-                                    <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
-                                </button>
-                            </Link>
-                            <p className="newText">Wir melden uns innerhalb von 48 Stunden.</p>
-                        </div>
-                    )}
-                    {this.state.matches && (
+                {this.state.matches && (
+                    <div class="btn1">
+                        <Link to="/formular">
+                            <button type="button" class="btn3" to="/formular">
+                                <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
+                                <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
+                            </button>
+                        </Link>
+                        <p className="newText">Wir melden uns innerhalb von 48 Stunden.</p>
+                    </div>
+                )}
+                {this.state.matches && (
                     <div class="btn2">
                         <img width="auto" height="100" src="https://images.clickfunnels.com/b5/9214e05d1840de8818f7ff40920da8/Bekannt-aus-4-.svg" />
-                        </div>
-                    )}
-                </div>
+                    </div>
+                )}
 
                 {!this.state.matches && (
                     <div class="btn1">
@@ -94,7 +88,9 @@ export class Home extends Component {
                     </div>
                 )}
                 {!this.state.matches && (
-                    <img className="btn2" width="auto" height="100" src="https://images.clickfunnels.com/b5/9214e05d1840de8818f7ff40920da8/Bekannt-aus-4-.svg" />
+                    <div className="btn2">
+                        <img width="auto" height="80" src="https://images.clickfunnels.com/b5/9214e05d1840de8818f7ff40920da8/Bekannt-aus-4-.svg" />
+                    </div>
                 )}
                 {this.state.matches && (
                     <div class="blkfooter2">
@@ -137,14 +133,14 @@ export class Home extends Component {
                             <p class="itemText"><BsCheck />  ​Krypto-Währungen</p>
                             <p class="itemText"><BsCheck />  ​Lebensversicherungen</p>
                         </div>
-                        <div className="onlyLeft2">
+                        <div class="btn1">
                             <Link to="/formular">
-                                <button type="button" class="btn3R" to="/formular">
+                                <button type="button" class="btn3" to="/formular">
                                     <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
                                     <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                                 </button>
                             </Link>
-                            <p className="btnTextMainR">Wir melden uns innerhalb von 48 Stunden.</p>
+                            <p className="newText">Wir melden uns innerhalb von 48 Stunden.</p>
                         </div>
                     </div>
                 )}
@@ -154,15 +150,19 @@ export class Home extends Component {
                     <img width="auto" height="800" src="https://images.clickfunnels.com/60/f78ec0a76e43d0a7dc29b220d5d43f/Kopie-von-Das-Problem-mit-der-Inflation-1-.svg" />
                 )}
                 {!this.state.matches && (
-                    <img width="auto" height="350" src="https://images.clickfunnels.com/60/f78ec0a76e43d0a7dc29b220d5d43f/Kopie-von-Das-Problem-mit-der-Inflation-1-.svg" />
-                )}
+                    <div className="newSkizz">
+                        <img width="100%" height="auto" src="https://images.clickfunnels.com/60/f78ec0a76e43d0a7dc29b220d5d43f/Kopie-von-Das-Problem-mit-der-Inflation-1-.svg" />
+                    </div>
+                     )}
                 <br /><br /><br /><br />
                 <h1 class="centerText"><h3>Kleine Optimierungen bringen 6- bis 7-stellige Summen</h3></h1><br /><br />
                 {this.state.matches && (
                     <img width="auto" height="800" src="https://images.clickfunnels.com/ab/50acd8c0f943229f96805782471cc4/Kopie-von-Das-Problem-mit-der-Inflation-3-.svg" />
                 )}
                 {!this.state.matches && (
-                    <img width="auto" height="350" src="https://images.clickfunnels.com/ab/50acd8c0f943229f96805782471cc4/Kopie-von-Das-Problem-mit-der-Inflation-3-.svg" />
+                    <div className="newSkizz">
+                        <img width="100%" height="auto" src="https://images.clickfunnels.com/ab/50acd8c0f943229f96805782471cc4/Kopie-von-Das-Problem-mit-der-Inflation-3-.svg" />
+                    </div>
                 )}
 
                 <br /><br /><br /><br /><br /><br />
@@ -178,14 +178,14 @@ export class Home extends Component {
                     </div>
                 )}
                 {!this.state.matches && (
-                    <div class="btnDiv4">
+                    <div class="btn1">
                         <Link to="/formular">
                             <button type="button" class="btn3" to="/formular">
                                 <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
                                 <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                             </button>
                         </Link>
-                        <p className="newText2">Wir melden uns innerhalb von 48 Stunden.</p>
+                        <p className="newText">Wir melden uns innerhalb von 48 Stunden.</p>
                     </div>
                   )}
                 <br /><br /><br />
@@ -226,14 +226,14 @@ export class Home extends Component {
                         <p class="itemTextR"><BsCheck />  "​Finanzberater arbeiten nur in ihre eigene Tasche."</p>
                         <p class="itemTextR"><BsCheck />  "In YouTube-Videos bekomme ich das nötige Wissen."</p>
                         <p class="itemTextR"><BsCheck />  ​"<b>Kryptowährungen</b> sind die Zukunft."</p>
-                        <div class="btnDiv4RR">
+                        <div class="btn1">
                             <Link to="/formular">
                                 <button type="button" class="btn3" to="/formular">
                                     <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
                                     <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                                 </button>
                             </Link>
-                            <p className="newText2">Wir melden uns innerhalb von 48 Stunden.</p>
+                            <p className="newText">Wir melden uns innerhalb von 48 Stunden.</p>
                         </div>
                     </div>
                 )}
@@ -310,14 +310,14 @@ export class Home extends Component {
                             <p>Du denkst gerade noch "Aktien sind unsicher" oder "Immobilien sind aktuell zu teuer".
                                 Aber bist du dir denn dessen wirklich sicher oder ist das einfach etwas, das du von anderen aufgeschnappt hast und wiederholst?</p>
                         </div>
-                        <div class="btnDiv4RR">
+                        <div class="btn1">
                             <Link to="/formular">
                                 <button type="button" class="btn3" to="/formular">
                                     <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
                                     <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                                 </button>
                             </Link>
-                            <p className="newText2">Wir melden uns innerhalb von 48 Stunden.</p>
+                            <p className="newText">Wir melden uns innerhalb von 48 Stunden.</p>
                         </div>
                     </div>
                 )}
@@ -432,17 +432,17 @@ export class Home extends Component {
                                     </li>
                                 </ul>
                             <div class="item3">
-                                <img width="auto" height="700" src={require('./big2.jpg')} />
+                                <img width="100%" height="auto" src={require('./alexNeu.jpg')} />
                             </div>
                         </div>
-                        <div class="btnDiv4RR">
+                        <div class="btn1">
                             <Link to="/formular">
                                 <button type="button" class="btn3" to="/formular">
                                     <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
                                     <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                                 </button>
                             </Link>
-                            <p className="newText2">Wir melden uns innerhalb von 48 Stunden.</p>
+                            <p className="newText">Wir melden uns innerhalb von 48 Stunden.</p>
                         </div>
                     </div>
                 )}
@@ -469,38 +469,37 @@ export class Home extends Component {
                 {!this.state.matches && (
                     <div>
                         <h2>Das sagen unsere Kunden über uns</h2>
-                        <div class="bewertungen">
-                            <div>
-                                <img className="bewertung" width="auto" height="135" src={require('./pic1.png')} />
-                            </div>
+                        <div class="newSkizz">
+                                <img className="bewertung" width="100%" height="auto" src={require('./pic1.png')} />
+                         </div>
                             <p></p>
-                            <div>
-                                <img className="bewertung" width="auto" height="145" src={require('./pic2.png')} />
-                            </div>
+                        <div class="newSkizz">
+                                <img className="bewertung" width="100%" height="auto" src={require('./pic2.png')} />
+                         </div>
                             <p></p>
-                            <div>
-                                <img className="bewertung" width="auto" height="120" src={require('./pic3.png')} />
-                            </div>
+                        <div class="newSkizz">
+                                <img className="bewertung" width="100%" height="auto" src={require('./pic3.png')} />
+                         </div>
                             <p></p>
-                        </div>
                     </div>
                 )}
 
                 <div class="blkfooter">
-                    <div class="bkElement2">
-                        <div class="grid-container3">
-                            <Link to="https://www.ovb.de/service-faq/impressum.html" style={{ textDecoration: 'none' }}>
-                                <p style={{ paddingLeft: 13, color: 'white' }}>Impressum</p>
-                            </Link>
-                            <Link to="https://www.ovb.eu/datenschutz.html" style={{ textDecoration: 'none' }}>
-                                <p style={{ paddingLeft: 13, color: 'white' }}>Datenschutz</p>
-                            </Link>
-                            <Link to="https://www.instagram.com/agentur_urban/" style={{ textDecoration: 'none' }}>
-                                <p style={{ paddingLeft: 13, color: 'white' }}>Instagram</p>
-                            </Link>
-                        </div>
+                    <div class="grid-container3">
+                        <Link to="https://www.ovb.de/service-faq/impressum.html" style={{ textDecoration: 'none' }}>
+                            <p style={{ paddingLeft: 13, color: 'white' }}>Impressum</p>
+                        </Link>
+                        <Link to="https://www.ovb.eu/datenschutz.html" style={{ textDecoration: 'none' }}>
+                            <p style={{ paddingLeft: 13, color: 'white' }}>Datenschutz</p>
+                        </Link>
+                        <Link to="https://www.instagram.com/agentur_urban/" style={{ textDecoration: 'none' }}>
+                            <p style={{ paddingLeft: 13, color: 'white' }}>Instagram</p>
+                        </Link>
                     </div>
-                    <p className="footerText">© 2022 Urban Finanzkonzepte. All Rights Reserved.</p>
+                    <div class="newSkizz">
+                        <p className="centerTextAlex">© 2022 Urban Finanzkonzepte. All Rights Reserved.</p>
+                    </div>
+                    
                 </div>
             </div >
         );
