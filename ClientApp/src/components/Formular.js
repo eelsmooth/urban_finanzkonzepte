@@ -67,22 +67,37 @@ export class Formular extends Component {
                     </form>
                 </div>
                 <br /><br /><br /><br /><br />
-                <div class="blkfooter">
-                    <div class="bkElement2">
-                        <div class="grid-container3">
-                            <Link to="https://www.ovb.de/service-faq/impressum.html" style={{ textDecoration: 'none' }}>
-                                <p style={{ paddingLeft: 13, color: 'white' }}>Impressum</p>
-                            </Link>
-                            <Link to="https://www.ovb.eu/datenschutz.html" style={{ textDecoration: 'none' }}>
-                                <p style={{ paddingLeft: 13, color: 'white' }}>Datenschutz</p>
-                            </Link>
-                            <Link to="https://www.instagram.com/agentur_urban/" style={{ textDecoration: 'none' }}>
-                                <p style={{ paddingLeft: 13, color: 'white' }}>Instagram</p>
-                            </Link>
+                <br /><br /><br /><br /><br />
+                {this.state.matches && (
+                    <div class="blkfooterX">
+                        <div class="grid-container9">
+                            <a className="whiteTextNew" style={{ textDecoration: 'none', color: 'white' }}
+                                href="https://www.ovb.de/service-faq/impressum.html">Impressum</a>
+                            <a className="whiteTextNew" style={{ textDecoration: 'none', color: 'white' }}
+                                href="https://www.ovb.eu/datenschutz.html">Datenschutz</a>
+                            <a className="whiteTextNew" style={{ textDecoration: 'none', color: 'white' }}
+                                href="https://www.instagram.com/agentur_urban/">Instagram</a>
+                        </div>
+                        <div class="newSkizz">
+                            <p className="centerTextAlex">© 2022 Urban Finanzkonzepte. All Rights Reserved.</p>
                         </div>
                     </div>
-                    <p className="footerText">	&#169; 2022 Urban Finanzkonzepte. All Rights Reserved.</p>
-                </div>
+                )}
+                {!this.state.matches && (
+                    <div class="blkfooterXForm">
+                        <div class="grid-container9">
+                            <a className="whiteTextNew" style={{ textDecoration: 'none', color: 'white' }}
+                                href="https://www.ovb.de/service-faq/impressum.html">Impressum</a>
+                            <a className="whiteTextNew" style={{ textDecoration: 'none', color: 'white' }}
+                                href="https://www.ovb.eu/datenschutz.html">Datenschutz</a>
+                            <a className="whiteTextNew" style={{ textDecoration: 'none', color: 'white' }}
+                                href="https://www.instagram.com/agentur_urban/">Instagram</a>
+                        </div>
+                        <div class="newSkizz">
+                            <p className="centerTextAlex">&copy; 2022 Urban Finanzkonzepte. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                )}
             </div>
         );
     }

@@ -12,6 +12,18 @@
         font-size: 12px;
         color: white;
     }
+    .grid-containerFormNew {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        gap: 25px;
+        padding-top: 35px;
+    }
+    .btnBewertung {
+        margin-top: 5% !important;
+        margin-bottom: 7%;
+        align-content: center;
+    }
     .imgejrh {
         align-Self: center;
         width: 100% !important;
@@ -69,8 +81,22 @@
         margin-top: 40px;
         margin-left: -60px !important;
     }
+    .blkfooterXForm {
+        background-color: black !important;
+        width: 104.3% !important;
+        margin-left: -11px !important;
+        height: 150px !important;
+        margin-top: -100px !important;
+    }
     .btnTextMainR{
         margin-left: -40px !important;
+    }
+    .btnTextMainInBlack {
+        color: white;
+        text-align: center;
+    }
+    .align {
+        text-align: center;
     }
     .btn2 {
         margin-top: 20px;
@@ -95,7 +121,7 @@
     .blkfooterXR {
         background-color: black;
         width: 100%;
-        height: 850px !important;
+        height: 950px !important;
     }
     .itemTextR {
         font-size: 18px;
@@ -155,8 +181,52 @@ a.navbar-brand {
 
 .blkfooterX {
     background-color: black;
+    width: 153.9%;
+    margin-left: -350px;
+    height: 150px;
+}
+
+.blkfooterLUL {
+    background-color: black;
     width: 100%;
-    height: 700px;
+    height: 720px;
+}
+
+.thatnewitem {
+    padding: 1px;
+    margin: auto;
+}
+
+.thatnewitem2 {
+    padding: 20px;
+    margin: auto;
+    color: #ff9329;
+}
+
+.grid-containerthatnew {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 70%;
+    padding: 15px;
+    align-content: center;
+}
+
+.blkfooterSteps {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 380px;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.blkfooterXForm {
+    background-color: black;
+    width: 153.9%;
+    margin-left: -350px;
+    height: 150px;
+    margin-top: -100px;
 }
 
 .blkfooter2 {
@@ -176,15 +246,18 @@ a.navbar-brand {
 }
 
 .bewertungen {
-    padding:5%;
-    width: 80% !important;
+    width: 100% !important;
     height: 100% !important;
+    margin-bottom: 75px;
+    align-content: center;
     /* Center horizontally*/
 }
 
-.bewertung{
-    border:solid;
+.bewertung {
+    border: solid;
     border-width: 2px;
+    margin: auto;
+    display: block;
 }
 
 .bkElement {
@@ -273,13 +346,60 @@ html {
     grid-template-columns: auto;
 }
 
+.blkfooterXX {
+    background-color: black;
+    width: 113.5% !important;
+    height: 180px;
+    margin-left: -76px;
+}
+
+.blkfooterX2 {
+    background-color: black;
+    width: 144.5% !important;
+    height: 130px;
+    margin-top: -130px;
+    margin-left: -300px;
+}
+
+.grid-container9 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap:25px;
+    padding-top:35px;
+}
+
 .grid-container4 {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 100px;
     padding: 120px;
-    margin-top: -170px;
+    margin-top: -150px;
     align-items: center;
+}
+
+.grid-container4X1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 120px;
+    margin-top: -150px;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-container4X {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+    margin-top: -150px;
+    gap: 250px;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.bigFont {
+    font-size: 48px;
+    text-align: center;
 }
 
 .deco {
@@ -294,23 +414,31 @@ html {
     padding: 120px;
     margin-top: -115px;
     align-items: center;
-    margin-left:-8%;
+    margin-left:-9.2%;
 }
 
 .centerTexter {
     text-align: center;
     color: white;
 }
+.centerTexterBlack {
+    text-align: center;
+}
 
 .onlyLeft{
     margin-left: 12%;
 }
 .onlyLeft2 {
-    margin-left: 33%;
+    margin-left: 37%;
     margin-top: -5%
 }
 
-
+.centerTextAlex {
+    text-align: center;
+    margin: 25px;
+    font-size: 12px;
+    color: white;
+}
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -323,7 +451,7 @@ html {
 }
 
 .newText {
-    margin-left: 8%;
+    margin-left: 3%;
     font-size: 13px;
 }
 
@@ -342,20 +470,60 @@ html {
     display: inline-block;
     font-size: 16px;
 }
+.txtbtnblck {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    align-self: center;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+}
+.btn3x {
+    background-color: #ff9329;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    align-self: center;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+}
 
 .btnDiv4 {
     margin-left: 35%;
     margin-top:-5%;
 }
 
+.btnDiv4thatnew {
+    margin-left: 35%;
+}
+
 .btn1 {
     grid-row: 1/6;
-    margin-top: -50%;
-    margin-left: 25%;
+    margin-top: -15%;
+    margin-left: 20%;
+}
+
+.btnBewertung {
+    margin-top: -3%;
+    margin-bottom: 7%;
+    align-content: center;
+}
+
+.btnBewertungUnten {
+    margin-bottom: 7%;
+    align-content: center;
 }
 
 .btn2 {
-    margin-left: 25%;
+    margin-left: 60%;
+    padding-bottom: 5%;
 }
 
 .item2 {
@@ -393,6 +561,10 @@ html {
 
 .btnTextMain {
     color: white;
+    text-decoration:none;
+}
+.btnTextMainInBlack {
+    color: black;
 }
 .btnTextSub {
     color: white;

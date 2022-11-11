@@ -1,5 +1,5 @@
 ﻿import React, { Component } from 'react';
-import { BsCheck, BsCheckLg } from 'react-icons/bs';
+import { BsCheck, BsCheckLg, BsX } from 'react-icons/bs';
 import Video from "./vid1.mp4";
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
@@ -42,7 +42,10 @@ export class Home extends Component {
                     )}
                     { this.state.matches && (
                         <p class="itemTextOld"><BsCheckLg /> <b>​Garantierte, sichere Ergebnisse</b> aufgrund von bewiesenen Methoden (keine Meinungen).</p>
-                     )}
+                    )}
+                    {this.state.matches && (
+                        <p class="itemTextOld"><BsCheckLg /> <b>​Flexibel bleiben</b>, weil du dich nicht an Laufzeiten bindest.Du kannst jederzeit Beiträge erhöhen oder senken, Geld auszahlen, usw.</p>
+                    )}
                 </div>
                 {!this.state.matches && (
                     <p class="itemTextOld"><BsCheckLg /> <b>8-12x mehr Endkapital</b> als vergleichbare Geldanlagen, weil wir Strategien der oberen 1% anwenden.</p>
@@ -95,17 +98,17 @@ export class Home extends Component {
                 {this.state.matches && (
                     <div class="blkfooter2">
                         <p></p><br /><br />
-                        <h3 class="centerTexter">Die 8 häufigsten "Geldanlagen", mit denen du Unsummen verschenkst</h3><br /><br />
+                        <h2 class="centerTexter">Die 8 häufigsten "Geldanlagen", mit denen du Unsummen verschenkst</h2><br /><br />
                         <div className="onlyLeft">
                             <div class="grid-container">
-                                <p class="itemText"><BsCheck />  Bausparverträge</p>
-                                <p class="itemText"><BsCheck />  Riester-Verträge</p>
-                                <p class="itemText"><BsCheck />  Sparbücher</p>
-                                <p class="itemText"><BsCheck />  ​​Betriebliche Altersvorsorge</p>
-                                <p class="itemText"><BsCheck />  Girokonten</p>
-                                <p class="itemText"><BsCheck />  Depots/Broker (Aktien, ETFs, Fonds)</p>
-                                <p class="itemText"><BsCheck />  ​Krypto-Währungen</p>
-                                <p class="itemText"><BsCheck />  ​Lebensversicherungen</p>
+                                <p class="itemText"><BsX />  Bausparverträge</p>
+                                <p class="itemText"><BsX />  Riester-Verträge</p>
+                                <p class="itemText"><BsX />  Sparbücher</p>
+                                <p class="itemText"><BsX />  ​​Betriebliche Altersvorsorge</p>
+                                <p class="itemText"><BsX />  Girokonten</p>
+                                <p class="itemText"><BsX />  Depots/Broker (Aktien, ETFs, Fonds)</p>
+                                <p class="itemText"><BsX />  ​Krypto-Währungen</p>
+                                <p class="itemText"><BsX />  ​Lebensversicherungen</p>
                             </div>
                         </div>
                         <div className="onlyLeft2">
@@ -115,7 +118,7 @@ export class Home extends Component {
                                     <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                                 </button>
                             </Link>
-                            <p className="newText2">Wir melden uns innerhalb von 48 Stunden.</p>
+                            <p className="btnTextMainInBlack">Wir melden uns innerhalb von 48 Stunden.</p>
                         </div>
                     </div>
                 )}
@@ -124,14 +127,14 @@ export class Home extends Component {
                         <p></p><br /><br />
                         <h3 class="centerTexter">Die 8 häufigsten "Geldanlagen", mit denen du Unsummen verschenkst</h3><br /><br />
                         <div className="onlyLeft">
-                            <p class="itemText"><BsCheck />  Bausparverträge</p>
-                            <p class="itemText"><BsCheck />  Riester-Verträge</p>
-                            <p class="itemText"><BsCheck />  Sparbücher</p>
-                            <p class="itemText"><BsCheck />  ​​Betriebliche Altersvorsorge</p>
-                            <p class="itemText"><BsCheck />  Girokonten</p>
-                            <p class="itemText"><BsCheck />  Depots/Broker (Aktien, ETFs, Fonds)</p>
-                            <p class="itemText"><BsCheck />  ​Krypto-Währungen</p>
-                            <p class="itemText"><BsCheck />  ​Lebensversicherungen</p>
+                            <p class="itemText"><BsX />  Bausparverträge</p>
+                            <p class="itemText"><BsX />  Riester-Verträge</p>
+                            <p class="itemText"><BsX />  Sparbücher</p>
+                            <p class="itemText"><BsX />  ​​Betriebliche Altersvorsorge</p>
+                            <p class="itemText"><BsX />  Girokonten</p>
+                            <p class="itemText"><BsX />  Depots/Broker (Aktien, ETFs, Fonds)</p>
+                            <p class="itemText"><BsX />  ​Krypto-Währungen</p>
+                            <p class="itemText"><BsX />  ​Lebensversicherungen</p>
                         </div>
                         <div class="btn1">
                             <Link to="/formular">
@@ -140,12 +143,12 @@ export class Home extends Component {
                                     <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                                 </button>
                             </Link>
-                            <p className="newText">Wir melden uns innerhalb von 48 Stunden.</p>
+                            <p className="btnTextMainInBlack">Wir melden uns innerhalb von 48 Stunden.</p>
                         </div>
                     </div>
                 )}
                 <br /><br /><br /><br />
-                <h1 class="centerText"><h3>Es ist viel mehr möglich</h3></h1><br /><br />
+                <h1 class="bigFont"><p>Es ist viel mehr möglich</p></h1><br /><br />
                 {this.state.matches && (
                     <img width="auto" height="800" src="https://images.clickfunnels.com/60/f78ec0a76e43d0a7dc29b220d5d43f/Kopie-von-Das-Problem-mit-der-Inflation-1-.svg" />
                 )}
@@ -155,7 +158,7 @@ export class Home extends Component {
                     </div>
                      )}
                 <br /><br /><br /><br />
-                <h1 class="centerText"><h3>Kleine Optimierungen bringen 6- bis 7-stellige Summen</h3></h1><br /><br />
+                <h1 class="bigFont"><p>Kleine Optimierungen bringen 6- bis 7-stellige Summen</p></h1><br /><br />
                 {this.state.matches && (
                     <img width="auto" height="800" src="https://images.clickfunnels.com/ab/50acd8c0f943229f96805782471cc4/Kopie-von-Das-Problem-mit-der-Inflation-3-.svg" />
                 )}
@@ -190,18 +193,26 @@ export class Home extends Component {
                   )}
                 <br /><br /><br />
                 {this.state.matches && (
-                    <div class="blkfooterX">
+                    <div class="blkfooterLUL">
                         <p></p><br /><br />
-                        <h3 class="centerTexter">Häufige Irrglauben</h3><br /><br />
+                        <h1 class="centerTexter">Häufige Irrglauben</h1><br /><br />
                         <div class="grid-container">
-                            <p class="itemText"><BsCheck />  "Wenn ich mir Hilfe hole, habe ich Angst, meine Finanzen aus der Hand zu geben."</p>
-                            <p class="itemText"><BsCheck />  "Um sein Geld perfekt anzulegen, muss man schon viel Geld haben."</p>
-                            <p class="itemText"><BsCheck />  "Mit guten Apps kann ich mein Geld auch selbst optimal anlegen."</p>
-                            <p class="itemText"><BsCheck />  ​"Aktien, die ich selbst aussuche, sind die besten."</p>
-                            <p class="itemText"><BsCheck />  "Günstige ETFs bei einem günstigen Broker reichen auch."</p>
-                            <p class="itemText"><BsCheck />  "​Finanzberater arbeiten nur in ihre eigene Tasche."</p>
-                            <p class="itemText"><BsCheck />  "In YouTube-Videos bekomme ich das nötige Wissen."</p>
-                            <p class="itemText"><BsCheck />  ​"<b>Kryptowährungen</b> sind die Zukunft."</p>
+                            <p class="itemText"><BsX size={35} style={{ color: 'orange' }} />
+                                "Wenn ich mir Hilfe hole, habe ich Angst, meine Finanzen aus der Hand zu geben."</p>
+                            <p class="itemText"><BsX size={35} style={{ color: 'orange' }} />
+                                "Um sein Geld perfekt anzulegen, muss man schon viel Geld haben."</p>
+                            <p class="itemText"><BsX size={35} style={{ color: 'orange' }} />
+                                "Mit guten Apps kann ich mein Geld auch selbst optimal anlegen."</p>
+                            <p class="itemText"><BsX size={35} style={{ color: 'orange' }} />
+                                "Aktien, die ich selbst aussuche, sind die besten."</p>
+                            <p class="itemText"><BsX size={35} style={{ color: 'orange' }} />
+                                "Günstige ETFs bei einem günstigen Broker reichen auch."</p>
+                            <p class="itemText"><BsX size={35} style={{ color: 'orange' }} />
+                                "​Finanzberater arbeiten nur in ihre eigene Tasche."</p>
+                            <p class="itemText"><BsX size={35} style={{ color: 'orange' }} />
+                                "In YouTube-Videos bekomme ich das nötige Wissen."</p>
+                            <p class="itemText"><BsX size={35} style={{ color: 'orange' }} />
+                                "<b>Kryptowährungen</b> sind die Zukunft."</p>
                         </div>
                         <div class="btnDiv4">
                             <Link to="/formular">
@@ -210,7 +221,7 @@ export class Home extends Component {
                                     <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                                 </button>
                             </Link>
-                            <p className="newText2">Wir melden uns innerhalb von 48 Stunden.</p>
+                            <p className="btnTextMainInBlack">Wir melden uns innerhalb von 48 Stunden.</p>
                         </div>
                     </div>
                 )}
@@ -218,14 +229,22 @@ export class Home extends Component {
                     <div class="blkfooterXR">
                         <p></p><br /><br />
                         <h3 class="centerTexter">Häufige Irrglauben</h3><br /><br />
-                        <p class="itemTextR"><BsCheck />  "Wenn ich mir Hilfe hole, habe ich Angst, meine Finanzen aus der Hand zu geben."</p>
-                        <p class="itemTextR"><BsCheck />  "Um sein Geld perfekt anzulegen, muss man schon viel Geld haben."</p>
-                        <p class="itemTextR"><BsCheck />  "Mit guten Apps kann ich mein Geld auch selbst optimal anlegen."</p>
-                        <p class="itemTextR"><BsCheck />  ​"Aktien, die ich selbst aussuche, sind die besten."</p>
-                        <p class="itemTextR"><BsCheck />  "Günstige ETFs bei einem günstigen Broker reichen auch."</p>
-                        <p class="itemTextR"><BsCheck />  "​Finanzberater arbeiten nur in ihre eigene Tasche."</p>
-                        <p class="itemTextR"><BsCheck />  "In YouTube-Videos bekomme ich das nötige Wissen."</p>
-                        <p class="itemTextR"><BsCheck />  ​"<b>Kryptowährungen</b> sind die Zukunft."</p>
+                        <p class="itemTextR"><BsX size={35} style={{color: 'orange' }} />
+                            "Wenn ich mir Hilfe hole, habe ich Angst, meine Finanzen aus der Hand zu geben."</p>
+                        <p class="itemTextR"><BsX size={35} style={{ color: 'orange' }} />
+                            "Um sein Geld perfekt anzulegen, muss man schon viel Geld haben."</p>
+                        <p class="itemTextR"><BsX size={35} style={{ color: 'orange' }} />
+                            "Mit guten Apps kann ich mein Geld auch selbst optimal anlegen."</p>
+                        <p class="itemTextR"><BsX size={35} style={{ color: 'orange' }} />
+                            "Aktien, die ich selbst aussuche, sind die besten."</p>
+                        <p class="itemTextR"><BsX size={35} style={{ color: 'orange' }} />
+                            "Günstige ETFs bei einem günstigen Broker reichen auch."</p>
+                        <p class="itemTextR"><BsX size={35} style={{ color: 'orange' }} />
+                            "​Finanzberater arbeiten nur in ihre eigene Tasche."</p>
+                        <p class="itemTextR"><BsX size={35} style={{ color: 'orange' }} />
+                            "In YouTube-Videos bekomme ich das nötige Wissen."</p>
+                        <p class="itemTextR"><BsX size={35} style={{ color: 'orange' }} />
+                            "<b>Kryptowährungen</b> sind die Zukunft."</p>
                         <div class="btn1">
                             <Link to="/formular">
                                 <button type="button" class="btn3" to="/formular">
@@ -233,16 +252,16 @@ export class Home extends Component {
                                     <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                                 </button>
                             </Link>
-                            <p className="newText">Wir melden uns innerhalb von 48 Stunden.</p>
+                            <p className="btnTextMainInBlack">Wir melden uns innerhalb von 48 Stunden.</p>
                         </div>
                     </div>
                 )}
                 <br /><br /><br />
                 {this.state.matches && (
                     <div>
-                        <h2 class="margin">Die 5 häufigsten Gründe, die dich aktuell noch davon trennen, 6- bis 7-stelliges Vermögen aufzubauen</h2><br /><br />
+                        <h1 class="bigFont">Die 5 häufigsten Gründe, die dich aktuell noch davon trennen, 6- bis 7-stelliges Vermögen aufzubauen</h1><br /><br />
                         <p></p>
-                        <div class="grid-container3">
+                        <div class="grid-container4X1">
                             <div class="item3">
                                 <b>Fehlendes Wissen</b>
                                 <p>Dein fehlendes Wissen kann dafür sorgen, dass du falsche Strategien für richtig hältst.
@@ -259,13 +278,13 @@ export class Home extends Component {
                                     Doch weißt du so viel, wie jemand der seit Jahren den ganzen Tag nichts anderes macht?</p>
                             </div>
                         </div>
-                        <div class="grid-container4">
-                            <div class="item3">
+                        <div class="grid-container4X">
+                            <div class="align">
                                 <b>Misstrauen gegenüber Finanzberatern</b>
                                 <p>Du hast schon sehr viel schlechtes gehört von Bekannten oder Freunden, die schlechte Erfahrungen gemacht haben.
                                     Und jetzt hast du Bedenken, ob dir sowas auch passieren könnte.</p>
                             </div>
-                            <div class="item3">
+                            <div class="align">
                                 <b>Vorurteile</b>
                                 <p>Du denkst gerade noch "Aktien sind unsicher" oder "Immobilien sind aktuell zu teuer".
                                     Aber bist du dir denn dessen wirklich sicher oder ist das einfach etwas, das du von anderen aufgeschnappt hast und wiederholst?</p>
@@ -326,7 +345,7 @@ export class Home extends Component {
 
                 {this.state.matches && (
                     <div>
-                        <h3>Kein Finanzwissen zu haben ist NORMAL...</h3>
+                        <h2>Kein Finanzwissen zu haben ist NORMAL...</h2>
                         <p></p>
                         <div class="grid-container5">
                             <div class="item3">
@@ -372,7 +391,7 @@ export class Home extends Component {
                                 </ul>
                             </div>
                             <div class="item3">
-                                <img width="auto" height="700" src={require('./big2.jpg')} />
+                                <img width="auto" height="620" src={require('./big2.jpg')} />
                             </div>
                         </div>
                         <div class="btnDiv4">
@@ -449,7 +468,7 @@ export class Home extends Component {
                 <br /><br />
                 {this.state.matches && (
                     <div>
-                        <h2>Das sagen unsere Kunden über uns</h2>
+                        <h2 className="bigFont">Das sagen unsere Kunden über uns</h2>
                         <div class="bewertungen">
                             <div>
                                 <img className="bewertung" width="auto" height="180" src={require('./pic1.png')} />
@@ -468,7 +487,7 @@ export class Home extends Component {
                 )}
                 {!this.state.matches && (
                     <div>
-                        <h2>Das sagen unsere Kunden über uns</h2>
+                        <h2 className="bigFont">Das sagen unsere Kunden über uns</h2>
                         <div class="newSkizz">
                                 <img className="bewertung" width="100%" height="auto" src={require('./pic1.png')} />
                          </div>
@@ -483,24 +502,90 @@ export class Home extends Component {
                             <p></p>
                     </div>
                 )}
-
-                <div class="blkfooter">
-                    <div class="grid-container3">
-                        <Link to="https://www.ovb.de/service-faq/impressum.html" style={{ textDecoration: 'none' }}>
-                            <p style={{ paddingLeft: 13, color: 'white' }}>Impressum</p>
-                        </Link>
-                        <Link to="https://www.ovb.eu/datenschutz.html" style={{ textDecoration: 'none' }}>
-                            <p style={{ paddingLeft: 13, color: 'white' }}>Datenschutz</p>
-                        </Link>
-                        <Link to="https://www.instagram.com/agentur_urban/" style={{ textDecoration: 'none' }}>
-                            <p style={{ paddingLeft: 13, color: 'white' }}>Instagram</p>
-                        </Link>
-                    </div>
-                    <div class="newSkizz">
-                        <p className="centerTextAlex">© 2022 Urban Finanzkonzepte. All Rights Reserved.</p>
-                    </div>
-                    
+                <div class="btnBewertung">
+                    <Link style={{ textDecoration: 'none'}} to="/formular">
+                        <button type="button" class="btn3x" to="/formular">
+                            <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
+                            <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
+                        </button>
+                    </Link>
+                    <p className="txtbtnblck">Wir melden uns innerhalb von 48 Stunden.</p>
                 </div>
+                <h1 class="centerTexterBlack">So kannst du mit uns zusammenarbeiten</h1><br /><br />
+                {this.state.matches && (
+                    <div class="blkfooterSteps">
+                        <p></p><br /><br />
+                        <div class="grid-containerthatnew">
+                            <div class="thatnewitem2"><h1><b>1</b></h1></div>
+                            <div class="thatnewitem2"><h1><b>2</b></h1></div>
+                            <div class="thatnewitem2"><h1><b>3</b></h1></div>
+                            <div class="thatnewitem"><h3>Erstgespräch buchen</h3></div>
+                            <div class="thatnewitem"><h3>Erstgespräch</h3></div>
+                            <div class="thatnewitem"><h3>Beratung</h3></div>
+                            <div class="thatnewitem">Klicke auf einen der Buttons und fülle das Formular aus.</div>
+                            <div class="thatnewitem">Wir nehmen in 15 Minuten am Telefon die erste Analyse deiner Situation vor und geben dir wertvolle Tipps für deine Anlage.</div>
+                            <div class="thatnewitem">Wir zeigen dir unsere Strategie im Detail und du entscheidest, ob du diese von uns umsetzen lassen möchtest,
+                                um automatisiert ein 6- bis 7-stelliges Vermögen aufzubauen.</div>  
+                        </div>
+                    </div>
+                )}
+                {!this.state.matches && (
+                    <div class="blkfooterSteps">
+                        <p></p><br /><br />
+                        <div class="grid-containerthatnew">
+                            <div class="thatnewitem2"><h1><b>1</b></h1></div>
+                            <div class="thatnewitem2"><h1><b>2</b></h1></div>
+                            <div class="thatnewitem2"><h1><b>3</b></h1></div>
+                            <div class="thatnewitem"><h3>Erstgespräch buchen</h3></div>
+                            <div class="thatnewitem"><h3>Erstgespräch</h3></div>
+                            <div class="thatnewitem"><h3>Beratung</h3></div>
+                            <div class="thatnewitem">Klicke auf einen der Buttons und fülle das Formular aus.</div>
+                            <div class="thatnewitem">Wir nehmen in 15 Minuten am Telefon die erste Analyse deiner Situation vor und geben dir wertvolle Tipps für deine Anlage.</div>
+                            <div class="thatnewitem">Wir zeigen dir unsere Strategie im Detail und du entscheidest, ob du diese von uns umsetzen lassen möchtest,
+                                um automatisiert ein 6- bis 7-stelliges Vermögen aufzubauen.</div>
+                        </div>
+                    </div>
+                )}
+                <div class="btnBewertungUnten">
+                    <Link style={{ textDecoration: 'none' }} to="/formular">
+                        <button type="button" class="btn3x" to="/formular">
+                            <div><b class="btnTextMain">Jetzt Erstgespr&auml;ch vereinbaren</b></div>
+                            <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
+                        </button>
+                    </Link>
+                    <p className="txtbtnblck">Wir melden uns innerhalb von 48 Stunden.</p>
+                </div>
+                {this.state.matches && (
+                    <div class="blkfooterX">
+                        <div class="grid-container9">
+                            <a className="whiteTextNew" style={{ textDecoration: 'none', color: 'white' }}
+                                href="https://www.ovb.de/service-faq/impressum.html">Impressum</a>
+                            <a className="whiteTextNew" style={{ textDecoration: 'none', color: 'white' }}
+                                href="https://www.ovb.eu/datenschutz.html">Datenschutz</a>
+                            <a className="whiteTextNew" style={{ textDecoration: 'none', color: 'white' }}
+                                href="https://www.instagram.com/agentur_urban/">Instagram</a>
+                        </div>
+                        <div class="newSkizz">
+                            <p className="centerTextAlex">© 2022 Urban Finanzkonzepte. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                )}
+                {!this.state.matches && (
+                    <div class="blkfooter">
+                        <div class="grid-container9">
+                            <a className="whiteTextNew" style={{ textDecoration: 'none', color: 'white' }}
+                                href="https://www.ovb.de/service-faq/impressum.html">Impressum</a>
+                            <a className="whiteTextNew" style={{ textDecoration: 'none', color: 'white' }}
+                                href="https://www.ovb.eu/datenschutz.html">Datenschutz</a>
+                            <a className="whiteTextNew" style={{ textDecoration: 'none', color: 'white' }}
+                                href="https://www.instagram.com/agentur_urban/">Instagram</a>
+                        </div>
+                        <div class="newSkizz">
+                            <p className="centerTextAlex">© 2022 Urban Finanzkonzepte. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                )}
+
             </div >
         );
     }
