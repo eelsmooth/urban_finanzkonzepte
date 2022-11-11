@@ -121,7 +121,7 @@
     .blkfooterXR {
         background-color: black;
         width: 100%;
-        height: 950px !important;
+        height: 1000px !important;
     }
     .itemTextR {
         font-size: 18px;
@@ -197,10 +197,28 @@ a.navbar-brand {
     margin: auto;
 }
 
+.thatnewitem4 {
+    margin: auto;
+    text-align: center;
+}
+
+.thatnewitem3 {
+    padding: 20px;
+}
+
 .thatnewitem2 {
     padding: 20px;
     margin: auto;
     color: #ff9329;
+}
+
+.grid-containerthatnew2 {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(1, 1fr);
+    height: 80%;
+    padding: 20px;
+    align-content: center;
 }
 
 .grid-containerthatnew {
@@ -210,6 +228,15 @@ a.navbar-brand {
     height: 70%;
     padding: 15px;
     align-content: center;
+}
+
+.blkfooterSteps2 {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .blkfooterSteps {
@@ -565,6 +592,17 @@ html {
 }
 .btnTextMainInBlack {
     color: black;
+}
+.btnTextMainInWhite {
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    align-self: center;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
 }
 .btnTextSub {
     color: white;

@@ -252,7 +252,7 @@ export class Home extends Component {
                                     <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                                 </button>
                             </Link>
-                            <p className="btnTextMainInBlack">Wir melden uns innerhalb von 48 Stunden.</p>
+                            <p className="btnTextMainInWhite">Wir melden uns innerhalb von 48 Stunden.</p>
                         </div>
                     </div>
                 )}
@@ -522,26 +522,26 @@ export class Home extends Component {
                             <div class="thatnewitem"><h3>Erstgespräch buchen</h3></div>
                             <div class="thatnewitem"><h3>Erstgespräch</h3></div>
                             <div class="thatnewitem"><h3>Beratung</h3></div>
-                            <div class="thatnewitem">Klicke auf einen der Buttons und fülle das Formular aus.</div>
-                            <div class="thatnewitem">Wir nehmen in 15 Minuten am Telefon die erste Analyse deiner Situation vor und geben dir wertvolle Tipps für deine Anlage.</div>
-                            <div class="thatnewitem">Wir zeigen dir unsere Strategie im Detail und du entscheidest, ob du diese von uns umsetzen lassen möchtest,
+                            <div class="thatnewitem3">Klicke auf einen der Buttons und fülle das Formular aus.</div>
+                            <div class="thatnewitem3">Wir nehmen in 15 Minuten am Telefon die erste Analyse deiner Situation vor und geben dir wertvolle Tipps für deine Anlage.</div>
+                            <div class="thatnewitem3">Wir zeigen dir unsere Strategie im Detail und du entscheidest, ob du diese von uns umsetzen lassen möchtest,
                                 um automatisiert ein 6- bis 7-stelliges Vermögen aufzubauen.</div>  
                         </div>
                     </div>
                 )}
                 {!this.state.matches && (
-                    <div class="blkfooterSteps">
+                    <div class="blkfooterSteps2">
                         <p></p><br /><br />
-                        <div class="grid-containerthatnew">
+                        <div class="grid-containerthatnew2">
                             <div class="thatnewitem2"><h1><b>1</b></h1></div>
-                            <div class="thatnewitem2"><h1><b>2</b></h1></div>
-                            <div class="thatnewitem2"><h1><b>3</b></h1></div>
                             <div class="thatnewitem"><h3>Erstgespräch buchen</h3></div>
+                            <div class="thatnewitem4">Klicke auf einen der Buttons und fülle das Formular aus.</div>
+                            <div class="thatnewitem2"><h1><b>2</b></h1></div>
                             <div class="thatnewitem"><h3>Erstgespräch</h3></div>
+                            <div class="thatnewitem4">Wir nehmen in 15 Minuten am Telefon die erste Analyse deiner Situation vor und geben dir wertvolle Tipps für deine Anlage.</div>
+                            <div class="thatnewitem2"><h1><b>3</b></h1></div>
                             <div class="thatnewitem"><h3>Beratung</h3></div>
-                            <div class="thatnewitem">Klicke auf einen der Buttons und fülle das Formular aus.</div>
-                            <div class="thatnewitem">Wir nehmen in 15 Minuten am Telefon die erste Analyse deiner Situation vor und geben dir wertvolle Tipps für deine Anlage.</div>
-                            <div class="thatnewitem">Wir zeigen dir unsere Strategie im Detail und du entscheidest, ob du diese von uns umsetzen lassen möchtest,
+                            <div class="thatnewitem4">Wir zeigen dir unsere Strategie im Detail und du entscheidest, ob du diese von uns umsetzen lassen möchtest,
                                 um automatisiert ein 6- bis 7-stelliges Vermögen aufzubauen.</div>
                         </div>
                     </div>
