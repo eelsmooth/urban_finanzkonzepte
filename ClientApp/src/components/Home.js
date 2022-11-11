@@ -75,7 +75,7 @@ export class Home extends Component {
                 )}
                 {this.state.matches && (
                     <div class="btn2">
-                        <img width="auto" height="100" src="https://images.clickfunnels.com/b5/9214e05d1840de8818f7ff40920da8/Bekannt-aus-4-.svg" />
+                        <img class="txtbtnblckpc" width="auto" height="100" src={require('./bwt.png')} />
                     </div>
                 )}
 
@@ -91,8 +91,8 @@ export class Home extends Component {
                     </div>
                 )}
                 {!this.state.matches && (
-                    <div className="btn2">
-                        <img width="auto" height="80" src="https://images.clickfunnels.com/b5/9214e05d1840de8818f7ff40920da8/Bekannt-aus-4-.svg" />
+                    <div className="btn1">
+                        <img class="txtbtnblck" width="auto" height="80" src={require('./bwt.png')} />
                     </div>
                 )}
                 {this.state.matches && (
@@ -118,7 +118,7 @@ export class Home extends Component {
                                     <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                                 </button>
                             </Link>
-                            <p className="btnTextMainInBlack">Wir melden uns innerhalb von 48 Stunden.</p>
+                            <p className="btnTextMainInWhite2">Wir melden uns innerhalb von 48 Stunden.</p>
                         </div>
                     </div>
                 )}
@@ -127,14 +127,14 @@ export class Home extends Component {
                         <p></p><br /><br />
                         <h3 class="centerTexter">Die 8 häufigsten "Geldanlagen", mit denen du Unsummen verschenkst</h3><br /><br />
                         <div className="onlyLeft">
-                            <p class="itemText"><BsX />  Bausparverträge</p>
-                            <p class="itemText"><BsX />  Riester-Verträge</p>
-                            <p class="itemText"><BsX />  Sparbücher</p>
-                            <p class="itemText"><BsX />  ​​Betriebliche Altersvorsorge</p>
-                            <p class="itemText"><BsX />  Girokonten</p>
-                            <p class="itemText"><BsX />  Depots/Broker (Aktien, ETFs, Fonds)</p>
-                            <p class="itemText"><BsX />  ​Krypto-Währungen</p>
-                            <p class="itemText"><BsX />  ​Lebensversicherungen</p>
+                            <p class="itemText123"><BsX />  Bausparverträge</p>
+                            <p class="itemText123"><BsX />  Riester-Verträge</p>
+                            <p class="itemText123"><BsX />  Sparbücher</p>
+                            <p class="itemText123"><BsX />  ​​Betriebliche Altersvorsorge</p>
+                            <p class="itemText123"><BsX />  Girokonten</p>
+                            <p class="itemText123"><BsX />  Depots/Broker (Aktien, ETFs, Fonds)</p>
+                            <p class="itemText123"><BsX />  ​Krypto-Währungen</p>
+                            <p class="itemText123"><BsX />  ​Lebensversicherungen</p>
                         </div>
                         <div class="btn1">
                             <Link to="/formular">
@@ -143,7 +143,7 @@ export class Home extends Component {
                                     <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                                 </button>
                             </Link>
-                            <p className="btnTextMainInBlack">Wir melden uns innerhalb von 48 Stunden.</p>
+                            <p className="btnTextMainInWhite">Wir melden uns innerhalb von 48 Stunden.</p>
                         </div>
                     </div>
                 )}
@@ -221,7 +221,7 @@ export class Home extends Component {
                                     <div class="btnTextSub">100% kostenlos und unverbindlich.</div>
                                 </button>
                             </Link>
-                            <p className="btnTextMainInBlack">Wir melden uns innerhalb von 48 Stunden.</p>
+                            <p className="btnTextMainInWhite2">Wir melden uns innerhalb von 48 Stunden.</p>
                         </div>
                     </div>
                 )}

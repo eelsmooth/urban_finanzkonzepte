@@ -121,7 +121,7 @@
     .blkfooterXR {
         background-color: black;
         width: 100%;
-        height: 1000px !important;
+        height: 1130px !important;
     }
     .itemTextR {
         font-size: 18px;
@@ -497,6 +497,16 @@ html {
     display: inline-block;
     font-size: 16px;
 }
+.txtbtnblckpc {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    align-self: center;
+    font-size: 16px;
+    margin-left: 75px;
+    display: block;
+}
 .txtbtnblck {
     border: none;
     text-align: center;
@@ -575,6 +585,11 @@ html {
     color: white;
 }
 
+.itemText123 {
+    font-size: 18px;
+    color: white;
+}
+
 .itemTextOld {
     font-size: 18px;
     text-align: left;
@@ -592,6 +607,9 @@ html {
 }
 .btnTextMainInBlack {
     color: black;
+}
+.btnTextMainInWhite2 {
+    color: white;
 }
 .btnTextMainInWhite {
     color: white;
