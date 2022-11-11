@@ -28,15 +28,12 @@ export class NavMenu extends Component {
         return (
             <header class="sticky-thc">
                 <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white box-shadow mb-3" container light>
-                    <img to="/formular" width="auto" height="50" src={require('./title1.png')} />
-                    <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-                    <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
-                        <ul className="navbar-nav flex-grow">
-                            <NavItem>
-                                <NavLink tag={Link} style={styles} className="text-light" to="/formular">Jetzt Erstgespr&auml;ch vereinbaren</NavLink>
-                            </NavItem>
-                        </ul>
-                    </Collapse>
+                    <img className="centr" width="auto" height="50" src={require('./title1.png')} />
+                    <ul className="navbar-nav flex-grow">
+                        <NavItem className="pad">
+                            <NavLink tag={Link} style={styles} className="text-light" to="/formular">Jetzt Erstgespr&auml;ch vereinbaren</NavLink>
+                        </NavItem>
+                    </ul>
                 </Navbar>
             </header>
         );

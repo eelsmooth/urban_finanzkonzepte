@@ -12,6 +12,17 @@
         font-size: 12px;
         color: white;
     }
+    .centr {
+        color: white;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        align-self: center;
+        font-size: 16px;
+        margin: 0 auto;
+        display: block;
+    }
     .grid-containerFormNew {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -599,6 +610,14 @@ html {
 .img1 {
     height: 500px;
     width: 500px;
+}
+
+.pad {
+    padding: 10px;
+}
+
+.navbar-toggler {
+    background-color: black;
 }
 
 .btnTextMain {
