@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import ContactUs from './contactForm';
 
 export class Formular extends Component {
     static displayName = Formular.name;
@@ -14,19 +13,7 @@ export class Formular extends Component {
         }
     }
     handleSubmit(e) {
-        e.preventDefault();
-        axios({
-            method: "POST",
-            url: "http://localhost:3002/send",
-            data: this.state
-        }).then((response) => {
-            if (response.data.status === 'success') {
-                alert("Message Sent.");
-                this.resetForm()
-            } else if (response.data.status === 'fail') {
-                alert("Message failed to send.")
-            }
-        })
+        console.log("e");
     }
     resetForm() {
         this.setState({ name: "", email: "", message: "" })
@@ -41,31 +28,7 @@ export class Formular extends Component {
                 <p><b>1.</b> Wie du 6- bis 7-stelliges Verm&ouml;gen aufbaust.</p>
                 <p><b>2.</b> Wie du konkret die Strategie der oberen 1% anwenden kannst.</p>
                 <p><b>3.</b> Wie du fr&uuml;her in Rente gehen kannst.</p>
-                <div className="formDiv2">
-                    <form id="contact-form" action="http://formspree.io/f/xzbwjrrz" method="POST">
-                        <div className="form-group">
-                            <label htmlFor="name">Vorname</label>
-                            <input style={{ width: "300px" }} type="text" name="Vorname: " className="form-control"></input>
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="name">Nachname</label>
-                            <input style={{ width: "300px" }} type="text" name="Nachname: " className="form-control"></input>
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="name">E-Mail-Adresse</label>
-                            <input style={{ width: "300px" }} type="email" name="E-Mail-Adresse: " className="form-control"></input>
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="name">Geburtsdatum</label>
-                            <input style={{ width: "300px" }} type="date" name="Geburtsdatum: " className="form-control"></input>
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="name">Handynummer</label>
-                            <input style={{ width: "300px" }} type="number" name="Handynummer: " className="form-control"></input>
-                        </div><br />
-                        <button type="submit" value="Send" className="btn btn-primary">Absenden</button>
-                    </form>
-                </div>
+                <ContactUs />
                 <br /><br /><br /><br /><br />
                 <br /><br /><br /><br /><br />
                 {this.state.matches && (
