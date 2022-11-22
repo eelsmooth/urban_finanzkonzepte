@@ -19,21 +19,26 @@ export default function ContactUs() {
         <div>
             <div className="container">
                 <form onSubmit={sendEmail}>
-                    <div className="row pt-5 mx-auto">
-                        <div className="col-8 form-group mx-auto">
-                            <input required type="text" className="form-control" placeholder="Vorname" name="vorname" />
+                    <div className="row pt-4 mx-2">
+                        <div className="col-8 form-group pt-2 mx-auto">
+                            <b>Vorname</b>
+                            <input required type="text" className="form-control" name="vorname" />
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input required type="text" className="form-control" placeholder="Nachname" name="nachname" />
+                            <b>Nachname</b>
+                            <input required type="text" className="form-control" name="nachname" />
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input required type="email" className="form-control" placeholder="E-Mail Adresse" name="email" />
+                            <b>E-Mail Adresse</b>
+                            <input required type="email" className="form-control" name="email" />
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input required type="date" className="form-control" placeholder="Geburtsdatum" name="date" />
+                            <b>Geburtsdatum</b>
+                            <input required type="date" className="form-control" name="date" />
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input required type="number" className="form-control" placeholder="Handynummer" name="number" />
+                            <b>Handynummer</b>
+                            <input required type="number" className="form-control" name="number" />
                         </div>
                         <div className="col-8 pt-3 mx-auto">
                             <input type="submit" className="btn btn-warning" value="Absenden"></input>
