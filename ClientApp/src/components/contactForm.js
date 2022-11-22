@@ -1,7 +1,10 @@
 ﻿import emailjs from "emailjs-com";
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 export default function ContactUs() {
+
+    let navigate = useNavigate();
 
     function sendEmail(e) {
         e.preventDefault();
@@ -9,6 +12,7 @@ export default function ContactUs() {
         emailjs.sendForm('service_1s6mxtw', 'template_u8uh5jp', e.target, 'wq6xFfge0--72GPDd')
             .then((result) => {
                 console.log(result.text);
+                navigate("/submitted"); 
             }, (error) => {
                 console.log(error.text);
             });
